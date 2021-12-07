@@ -1577,9 +1577,9 @@ void initCommandBuffer()
  8000c72:	2b04      	cmp	r3, #4
  8000c74:	d9ee      	bls.n	8000c54 <initCommandBuffer+0xc>
 	}
-	processBuffer.isbufferReadyForProcessing = true;
+	processBuffer.isbufferReadyForProcessing = false;
  8000c76:	4b04      	ldr	r3, [pc, #16]	; (8000c88 <initCommandBuffer+0x40>)
- 8000c78:	2201      	movs	r2, #1
+ 8000c78:	2200      	movs	r2, #0
  8000c7a:	729a      	strb	r2, [r3, #10]
 }
  8000c7c:	bf00      	nop

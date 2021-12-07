@@ -232,7 +232,7 @@ void initCommandBuffer()
 		processBuffer.processes[i].pid = i;
 		processBuffer.processes[i].finishedProcessing = false;
 	}
-	processBuffer.isbufferReadyForProcessing = true;
+	processBuffer.isbufferReadyForProcessing = false;
 }
 
 bool_t isBatchReadyForProcessing ()
